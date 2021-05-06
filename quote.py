@@ -29,8 +29,7 @@ class Favquote(db.Model):
 @app.route('/')
 def index():
     result = Favquote.query.all()
-    last = len(result)
-    return render_template('index.html', result=result, last=last)
+    return render_template('index.html', result=result)
 
 
 @app.route('/quotes')
