@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<button id='add_quote'><a href="{{ url_for('quotes')}}">Add Quote</a></button>
+<div class="container">
+    <section id="header">
+        <h1>RECENT QUOTE</h1>
+        <p class="updates">{{ result[last].author }} ~ {{ result[last].quote }}</p>
+
+    </section>
+    {% for r in result %}
+        <section class="quot_sec">
+            <h4 class='author_name'>{{ r.author }}</h4>
+            <hr><br>
+            <p class="quote_msg">{{ r.quote }}</p>
+        </section>
+    {% endfor %}
+
+</div>
+{% endblock %}
