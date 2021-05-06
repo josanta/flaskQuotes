@@ -8,8 +8,8 @@ app = Flask(__name__)
 
 
 # app.config['SECRET_KEY'] = "JSTANTAKENDRICK"
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:10854@localhost/quotes'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://kdnbbbzuycrvhc:40779367850fc794c4a76c8a3753236ca076a4ea49e3c82e6e4df45c1943e920@ec2-3-217-219-146.compute-1.amazonaws.com:5432/df7b72jlvl44id'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:10854@localhost/quotes'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://kdnbbbzuycrvhc:40779367850fc794c4a76c8a3753236ca076a4ea49e3c82e6e4df45c1943e920@ec2-3-217-219-146.compute-1.amazonaws.com:5432/df7b72jlvl44id'
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 db = SQLAlchemy(app)
 
@@ -29,7 +29,7 @@ class Favquote(db.Model):
 @app.route('/')
 def index():
     result = Favquote.query.all()
-    last = len(result) - 1
+    last = len(result)
     return render_template('index.html', result=result, last=last)
 
 
