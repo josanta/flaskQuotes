@@ -2,7 +2,8 @@ body {
     padding: 5px;
     background-color: #d8e3e7;
 }
-#logo{
+
+#logo {
     width: 100px;
 }
 
@@ -15,7 +16,8 @@ a {
     margin-left: 10%;
     margin-right: 10%;
 }
-.formDiv{
+
+.formDiv {
     margin: 2% 25%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     padding: 18px;
@@ -29,9 +31,14 @@ a {
     text-align: center;
     animation: backChange 5s infinite;
 }
+
 @keyframes backChange {
-  from {border: 4px solid #e0b9b9;}
-  to {border: 4px solid #9797e8;}
+    from {
+        border: 4px solid #e0b9b9;
+    }
+    to {
+        border: 4px solid #9797e8;
+    }
 }
 
 #add_quote {
@@ -66,7 +73,7 @@ a {
     margin: 10px;
 }
 
-#submit{
+#submit {
     background-color: dodgerblue;
     color: white;
     border: none;
@@ -75,41 +82,51 @@ a {
     margin: 10px 10px 0 17%;
 }
 
-#quote:focus, #author:focus{
+#quote:focus, #author:focus {
     outline-color: green;
 }
 
 #submit:hover {
     background-color: #72caea;
 }
-.quot_sec{
-    box-shadow: rgb(38, 57, 77) 0px 0px 30px -16px;
+
+.quot_sec {
+    /*box-shadow: rgb(38, 57, 77) 0px 0px 30px -16px;*/
     color: #132c33;
     max-width: 98%;
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
     font-family: 'Dancing Script', cursive;
     margin: 10px;
 
 }
-.quot_sec:nth-child(odd){
-    background-color: #ff79cd;
+
+.quot_sec:nth-child(odd) {
+    color: white;
+    background: rgb(174, 227, 192);
+    background: linear-gradient(180deg, rgba(174, 227, 192, 1) 42%, rgba(44, 113, 73, 1) 71%);
 }
-.quot_sec:nth-child(even){
-    background-color: #aa2ee6;
+
+.quot_sec:nth-child(even) {
+    color: white;
+    background: rgb(205, 237, 232);
+    background: linear-gradient(180deg, rgba(205, 237, 232, 1) 0%, rgba(66, 144, 142, 1) 42%);
 }
-.author_name{
+
+.author_name {
     color: #132c33;
     font-size: 20px;
     font-family: 'Original Surfer', cursive;
 }
-hr{
+
+hr {
     width: 90%;
     float: left;
     border: 1px solid #72caea;
     display: block;
 }
-#back{
+
+#back {
     padding: 15px;
     background: transparent;
     color: #052c3e;
@@ -117,19 +134,26 @@ hr{
     text-decoration: none;
     margin-left: 10%;
 }
-#back:hover{
+
+#back:hover {
     background-color: #052c3e;
     color: white;
     border-radius: 20%;
 }
-.updates{
+
+.updates {
     max-width: 50%;
     font-size: 18px;
     text-align: center;
     margin-left: 25%;
     animation: mymove 5s infinite;
 }
+
 @keyframes mymove {
-  from {color: #e0b9b9;}
-  to {color: #9797e8;}
+    from {
+        color: #e0b9b9;
+    }
+    to {
+        color: #9797e8;
+    }
 }
