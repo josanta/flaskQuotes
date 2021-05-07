@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = "JSTANTAKENDRICK"
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:10854@localhost/quotes'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://kdnbbbzuycrvhc:40779367850fc794c4a76c8a3753236ca076a4ea49e3c82e6e4df45c1943e920@ec2-3-217-219-146.compute-1.amazonaws.com:5432/df7b72jlvl44id'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://kbxwtiadbayjcg:1c821a2d89bcb69d65c4564bc9ab243a617a8e6e3387b7d9fe3bdaa6b97235f8@ec2-34-232-191-133.compute-1.amazonaws.com:5432/da8t9fshre9fsj'
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 db = SQLAlchemy(app)
 
